@@ -5,7 +5,8 @@
   cpu_num: '1'
   script:
 #    - cat /vagrant/key_value > /home/vagrant/.ssh/authorized_keys
-    - yum install -y nano
+    - systemctl restart network
+    - yum install -y nano    
 
 - host: centos7-host
   os: 'centos/7'
