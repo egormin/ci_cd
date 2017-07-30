@@ -37,6 +37,7 @@ my_config = ConfigData.yaml_config
               host.vm.provision :chef_solo do |chef|
                 chef.add_recipe "apache2"
                 chef.json = { :apache => { :default_site_enabled => true } }
+              end
             end
           end
 
